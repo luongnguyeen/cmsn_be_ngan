@@ -120,9 +120,40 @@ $('document').ready(function(){
 		loopSeven();
 		
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			$('#cake_fadein').fadeIn('slow');
+			$('#story').fadeIn('slow');
+			/*$('#cake_fadein').fadeIn('slow');*/
 		});
-	});	
+	});
+
+	$('#story').click(function(){
+		$(this).fadeOut('slow').promise().done(function(){
+			$('.message').fadeIn('slow');
+		});
+		
+		var i;
+
+		function msgLoop (i) {
+			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			i=i+1;
+			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+			if(i==50){
+				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+					$('.cake').fadeIn('fast');
+				});
+				
+			}
+			else{
+				msgLoop(i);
+			}			
+
+		});
+			// body...
+		}
+		
+		msgLoop(0);
+		
+	});
+});
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
@@ -181,7 +212,7 @@ $('document').ready(function(){
 		});
 	});
 	
-	$('#story').click(function(){
+	/* $('#story').click(function(){
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
@@ -210,7 +241,7 @@ $('document').ready(function(){
 		msgLoop(0);
 		
 	});
-});
+}); */
 
 
 
