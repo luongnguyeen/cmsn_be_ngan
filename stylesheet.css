@@ -1301,7 +1301,15 @@ audio {
         color: #fff;
         background-color: #466baf;
     }
-
+.photo_cua_be {
+        border-color: #466baf;
+        padding: 10px;
+        /*text-transform: lowercase;*/
+        font-family: 'Signika', sans-serif;
+        font-weight: 700;
+        color: #fff;
+        background-color: #466baf;
+}
 
 
     /*controlling tablet width*/
