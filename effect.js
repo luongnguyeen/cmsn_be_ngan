@@ -157,14 +157,14 @@ $('document').ready(function(){
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#light_candle').fadeIn('slow');
 		});
 	});
 
 	$('#light_candle').click(function(){
 		$('.fuego').fadeIn('slow');
-		$(this).fadeOut('slow').delay(4000).promise().done(function(){
+		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#thoi_nen').fadeIn('slow');
 		});
 	});
@@ -172,7 +172,7 @@ $('document').ready(function(){
 	
        $('#thoi_nen').click(function(){
 		$(this).fadeOut('slow');
-		$('.fuego').fadeOut('fast').delay(4000).promise().done(function(){
+		$('.fuego').fadeOut('fast').delay(3000).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 
 	         });
