@@ -164,7 +164,7 @@ $('document').ready(function(){
 
 	$('#light_candle').click(function(){
 		$('.fuego').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2500).promise().done(function(){
 			$('#thoi_nen').fadeIn('slow');
 		});
 	});
@@ -172,7 +172,7 @@ $('document').ready(function(){
 	
        $('#thoi_nen').click(function(){
 		$(this).fadeOut('slow');
-		$('.fuego').fadeOut('fast').delay(3000).promise().done(function(){
+		$('.fuego').fadeOut('fast').delay(2500).promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 
 	         });
@@ -207,7 +207,7 @@ $('document').ready(function(){
 		/*$('#b77').animate({top:260, left: vw+250},500);*/
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2500).promise().done(function(){
 			$('.photo_cua_be').fadeIn('slow');
 		});
 	});
