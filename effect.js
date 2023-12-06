@@ -188,6 +188,9 @@ $('document').ready(function(){
 
 		
 	$('#wish_message').click(function(){
+                 $('.cake').fadeOut('fast');
+                 $('.hoahong').addClass('hoahong-come');
+		
 		 vw = $(window).width()/2;
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
@@ -200,10 +203,10 @@ $('document').ready(function(){
 		/*$('#b7').attr('id','b77')*/
 		/*$('#b11').animate({top:260, left: vw-350},500);*/
 		/*$('#b22').animate({top:260, left: vw-250},500);*/
-		$('#b33').animate({top:340, left: vw-170},500);
-		$('#b44').animate({top:340, left: vw-90},500);
-		$('#b55').animate({top:340, left: vw+15},500);
-		$('#b66').animate({top:340, left: vw+115},500);
+		$('#b33').animate({top:200, left: vw-170},500);
+		$('#b44').animate({top:200, left: vw-90},500);
+		$('#b55').animate({top:200, left: vw+15},500);
+		$('#b66').animate({top:200, left: vw+115},500);
 		/*$('#b77').animate({top:260, left: vw+250},500);*/
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
